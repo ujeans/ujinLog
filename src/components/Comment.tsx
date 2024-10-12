@@ -13,9 +13,9 @@ function Comment() {
       const script = document.createElement("script");
       script.src = "https://utteranc.es/client.js";
       script.setAttribute("repo", "ujeans/ujinLog");
-      script.setAttribute("issue-term", "title");
-      script.setAttribute("label", "comment");
-      script.setAttribute("theme", utterancesTheme);
+      script.setAttribute("issue-term", "pathname");
+      script.setAttribute("label", "comments");
+      script.setAttribute("theme", "github-light");
       script.crossOrigin = "anonymous";
       script.async = true;
       script.onload = () => {
