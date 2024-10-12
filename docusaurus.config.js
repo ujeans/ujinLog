@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "ujeans 지식 트리",
   tagline: "ujeans의 개발과 관련된 다양한 글을 쓰는 블로그",
-  url: "https://ujinLog.vercel.app",
+  url: "https://ujeans-log.vercel.app",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
