@@ -1,0 +1,10 @@
+{
+  "label": "Web Frontend",
+  "position": 1,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "description": "Web Frontend"
+  }
+}

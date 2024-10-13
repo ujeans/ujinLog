@@ -25,7 +25,13 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: false,
+        docs: {
+          sidebarPath: "./sidebars.js",
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+        },
         blog: {
           routeBasePath: "/",
           showReadingTime: true,
@@ -55,8 +61,20 @@ const config = {
           src: "/img/logo.png",
         },
         items: [
-          { to: "/tags", label: "Tags", position: "left" },
-          { to: "/archive", label: "Archive", position: "left" },
+          {
+            label: "BLOG",
+            position: "left",
+            items: [
+              { to: "/tags", label: "Tags" },
+              { to: "/archive", label: "Archive" },
+            ],
+          },
+          {
+            type: "docSidebar",
+            sidebarId: "feGroup",
+            position: "left",
+            label: "WIKI",
+          },
           {
             href: "https://github.com/ujeans",
             label: "GitHub",
